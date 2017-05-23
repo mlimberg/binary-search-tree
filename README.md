@@ -26,3 +26,30 @@ From a speed perspective, each comparison allows the operations to skip about ha
 [CLONE THIS](https://github.com/mlimberg/binary-search-tree)
 
 Split into groups of 3 and we'll work through the implementation of a binary search tree! 
+
+#### We will work on implementing the following methods:
+
+* *INSERT* 
+  * add a node to the tree in the correct position based on the root node
+* *FIND*
+  * find a specific value within the tree
+* *MIN*
+  * get the lowest value in the tree
+* *MAX*
+  * get the highest value in the tree
+* *DELETE*
+  * remove a node from the tree
+  * what happens to any child nodes???_
+
+ #### If time allows, others to implement include:
+ 
+ * *toArray*
+    * return an array of all nodes in the tree in the order of `[root, left nodes, right nodes]`
+ * *SORT*
+    * return an array of all nodes in the tree sorted from lowest to highest
+ * *COUNT*
+    * get the total count of nodes in the tree
+ * *SUM*
+    * get the sum of all nodes in the tree
+ * *getLevel*
+    * get the level of the node passed in, in relation to the root
