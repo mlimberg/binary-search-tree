@@ -7,9 +7,7 @@ In its basic form, a Binary Search Tree is a data structure containing nodes wit
 * **Left** - a reference to the next **lowest** value in the tree
 * **Right** - a reference to the next **highest** value in the tree
 
-<p align=center>
 ![](http://www.geeksforgeeks.org/wp-content/uploads/gq/2014/01/200px-Binary_search_tree.svg_.png?raw=true)
-</p>
 
 #### When implementing a binary tree, there are a few rules to keep in mind:
 
