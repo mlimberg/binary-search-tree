@@ -1,0 +1,24 @@
+{
+  "name": "binary-tree",
+  "version": "1.0.0",
+  "main": "node.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha tests/*test.js"
+  },
+  "author": "Limbo",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "webpack": "^2.5.1"
+  },
+  "description": ""
+}
