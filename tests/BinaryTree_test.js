@@ -1,13 +1,13 @@
 const chai = require('chai');
 const expect = chai.expect;
-const BinaryTrie = require('../BinaryTrie.js');
+const BinaryTree = require('../BinaryTree.js');
 const Node = require('../Node.js');
 
-describe('BinaryTrie', () => {
+describe('BinaryTree', () => {
   let tree;
 
   beforeEach(() => {
-    tree = new BinaryTrie();
+    tree = new BinaryTree();
   });
 
   it.skip('should have a root node defaulted to null', () => {
@@ -15,7 +15,7 @@ describe('BinaryTrie', () => {
   });
 
   describe('PUSH', () => {
-    it.skip('should be able to add a node to the trie', () => {
+    it.skip('should be able to add a node to the Tree', () => {
 
     });
 
