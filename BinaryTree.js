@@ -37,6 +37,45 @@ class BinaryTree {
     }
   }
 
+  delete(data) {
+    let nodeToDelete = this.find(data)
+    let currentNode = this.rootNode;
+    let deletedNode = null;
+    let deletedFound = false;
+    let count = 0;
+
+    if(!nodeToDelete) {
+      deletedNode = undefined;
+      deletedFound = true;
+    } else if (currentNode.data === data) {
+      deletedNode = currentNode;
+      this.rootNode = null
+      deletedFound = true
+    }
+
+    while (!deletedFound) {
+      if(currentNode.right && currentNode.data < data) {
+        if(currentNode.right.data === data) {
+          deletedNode = currentNode.right
+          currentNode.right = null
+          deletedFound = true
+        } else {
+          currentNode = currentNode.right
+        }
+      } else if (currentNode.left && currentNode.data > data) {
+        if(currentNode.left.data === data) {
+          deletedNode = currentNode.left
+          currentNode.left = null
+          deletedFound = true;
+        } else {
+          currentNode = currentNode.left
+        }
+      }
+    }
+
+    return deletedNode
+  }
+
   find(data) {
     var currentNode = this.rootNode
     var result = null;
