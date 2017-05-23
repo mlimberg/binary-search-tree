@@ -151,6 +151,10 @@ describe('BinaryTree', () => {
     });
   });
 
+  describe('DELETE', () => {
+
+  })
+  
   describe('getCount', () => {
 
   });
@@ -158,6 +162,7 @@ describe('BinaryTree', () => {
   describe('getSum', () => {
 
   });
+
 
   describe('getLevelofNode', () => {
     //returns how may levels down from root node the searched value is
