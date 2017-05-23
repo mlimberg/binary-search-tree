@@ -1,14 +1,15 @@
-var chai = require('chai');
-var expect = chai.expect;
-var BST = require('../BinaryTree.js');
-var Node = require('../Node.js');
+const chai = require('chai');
+const expect = chai.expect;
+const BinaryTree = require('../BinaryTree.js');
+const Node = require('../Node.js');
 
-describe('BST', function() {
-  var tree;
+describe('BinaryTree', () => {
+  let tree;
 
-  beforeEach(function(){
-    tree = new BST();
+  beforeEach(() => {
+    tree = new BinaryTree();
   });
+
 
   context('when list is empty', function(){
     it.skip('rootNode is null', function(){
@@ -109,8 +110,9 @@ describe('BST', function() {
         expect(tree.rootNode.right.left.data).to.eq(5);
         expect(tree.rootNode.right.right.data).to.eq(7);
       });
+
     });
-  });
+
 
   describe('.find', function(){
     context('in an empty tree', function(){
@@ -196,8 +198,9 @@ describe('BST', function() {
         var result = tree.find(80);
         expect(result).to.eq(null);
       });
+
     });
-  });
+
 
   describe('.toArray', function(){
     context('wit.skiph an empty tree', function(){
@@ -215,8 +218,19 @@ describe('BST', function() {
         tree.push(3);
         expect(tree.toArray()).to.deep.eq([5,4,3,6,7]);
       });
+
     });
+
+    it.skip('should be able to find results to the immediate right (6)', () => {
+
+    });
+
+    it.skip('should be able to find nested results (5 and 3)', () =>  {
+
+    });
+
   });
+
 
   describe('.sort', function(){
     context('wit.skiph an empty tree', function(){
@@ -309,7 +323,32 @@ describe('BST', function() {
         tree.push(3);
         expect(tree.postOrdered()).to.deep.eq([1,3,2,5,4]);
       });
+
     });
+
+    it.skip('should find the min value', () => {
+
+    });
+
+    it.skip('should find the max value', () => {
+
+    });
+  });
+
+  describe('getCount', () => {
+
+  });
+
+  describe('getSum', () => {
+
+  });
+
+  describe('getLevelofNode', () => {
+    //returns how may levels down from root node the searched value is
+  });
+
+  describe('getLevelofNode', () => {
+    //returns how may levels down from root node the searched value is
   });
 
   describe('delete', () => {

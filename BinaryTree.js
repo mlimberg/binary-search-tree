@@ -1,6 +1,5 @@
-const Node = require('./Node.js')
-
 class BinaryTree {
+<<<<<<< HEAD
   constructor() {
     this.rootNode = null
   }
@@ -124,11 +123,9 @@ class BinaryTree {
   min() {
     return this.sort()[0] || null
   }
+=======
+>>>>>>> 42062ea19cbaa94c914629631be5f0703b0aa3e8
 
-  max() {
-    const sortedArray = this.sort()
-    return sortedArray[sortedArray.length - 1] || null
-  }
 }
 
 module.exports = BinaryTree;
