@@ -98,11 +98,11 @@ describe('BinaryTrie', () => {
     });
 
     it.skip('should return data from the tree into an array, starting with the root, then all left values, then all right', () => {
-      // tree.push(5);
-      // tree.push(4);
-      // tree.push(6);
-      // tree.push(7);
-      // tree.push(3);
+      tree.push(5);
+      tree.push(4);
+      tree.push(6);
+      tree.push(7);
+      tree.push(3);
     });
   });
 
@@ -112,13 +112,13 @@ describe('BinaryTrie', () => {
     });
 
     it.skip('should return a sorted array of tree elements, small to large', () => {
-      // tree.push(5)
-      // tree.push(4)
-      // tree.push(6)
-      // tree.push(7)
-      // tree.push(3)
-      // tree.push(2)
-      // tree.push(2102)
+      tree.push(5)
+      tree.push(4)
+      tree.push(6)
+      tree.push(7)
+      tree.push(3)
+      tree.push(2)
+      tree.push(2102)
     });
   });
 
@@ -151,7 +151,19 @@ describe('BinaryTrie', () => {
     });
   });
 
-  describe('', () => {
+  describe('getCount', () => {
 
+  });
+
+  describe('getSum', () => {
+
+  });
+
+  describe('getLevelofNode', () => {
+    //returns how may levels down from root node the searched value is
+  });
+
+  describe('getLevelofNode', () => {
+    //returns how may levels down from root node the searched value is
   });
 });
